@@ -1,0 +1,3 @@
+<ul>
+  <app-todo-item [ngClass]="{inactive:!todo.active}" *ngFor="let todo of todos" [todo]="todo" (todoClick)="handleTodoClicked($event)" ></app-todo-item>
+</ul>
